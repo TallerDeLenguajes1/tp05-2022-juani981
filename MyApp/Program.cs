@@ -7,5 +7,5 @@ string x=Console.ReadLine();
 Console.WriteLine("Su nombre es:");
 Console.WriteLine(x);
 
-Console.WriteLine("Este texto solo es visible en rama 2");
+Console.WriteLine("Este texto solo es visible en main");
 
