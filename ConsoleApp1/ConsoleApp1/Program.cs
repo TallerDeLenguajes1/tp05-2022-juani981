@@ -25,3 +25,73 @@ foreach (var item in array)
     i--;
 }
 Console.WriteLine(arrayinvertido);
+
+//Calculadora V1
+bool valido;
+var resultado=0; var a = 0;var b = 0;
+do
+{
+    //Console.Clear();
+    Console.WriteLine("1.Sumar");
+    Console.WriteLine("2.Restar");
+    Console.WriteLine("3.Multiplicar");
+    Console.WriteLine("4.Dividir");
+    Console.Write("Escriba una opcion:");
+    int seleccion = Convert.ToInt32(Console.ReadLine());
+    switch (seleccion)
+    {
+        case 1:
+            //suma
+            Console.WriteLine("Ingrese 2 números a sumar");
+            a = Console.Read();
+            
+            b = Console.Read();
+            resultado = a + b;
+            valido = true;
+            break;
+        case 2:
+            //resta
+            Console.WriteLine("Ingrese 2 números a restar");
+            a = Console.Read();
+            
+            b = Console.Read();
+            valido = true;
+            resultado = b - a;
+            break;
+        case 3:
+            //multi
+            Console.WriteLine("Ingrese 2 números a multiplicar");
+            a = Console.Read();
+            
+            b = Console.Read();
+            valido = true;
+            resultado=b * a;
+            break;
+        case 4:
+            //div
+            Console.WriteLine("Ingrese 2 números a dividir");
+            a = Console.Read();
+            
+            b = Console.Read();
+            resultado = a / b;
+            valido = true;
+            break;
+        default:
+            Console.WriteLine("Opcion incorrecta, intente nuevamente");
+            Console.Clear();
+            valido = false;
+            break;
+    }
+    Console.WriteLine("Resultado de la operacion:" + resultado);
+    Console.Write("Desea realizar otro calculo? 1 para SI");
+    //valido = Console.Read();
+    if (Console.Read() == 1)
+    {
+        valido = false;
+    }
+    else
+        valido = true;
+} while (valido == false);
+
+
+
