@@ -86,36 +86,5 @@ do
             break;
     }
     Console.WriteLine("Resultado de la operacion:" + resultado);
-    /*Console.Write("Desea realizar otro calculo? 1 para SI");
-    //valido = Console.Read();
-    if (Console.Read() == 1)
-    {
-        valido = false;
-    }
-    else
-        valido = true;*/
-} while (valido == false);
-
-//Calculadora V2
-Console.WriteLine("Calculadora V2");
-bool validov2;
-do
-{
-    Console.WriteLine("Ingrese 1 numero");
-    var c = Convert.ToDouble(Console.ReadLine());
     
-        validov2 = true;
-
-        Console.WriteLine("Valor absoluto de " + c);
-        Console.WriteLine(Math.Abs(c));
-        Console.WriteLine("Cuadrado de " + c);
-        Console.WriteLine(Math.Pow(c, 2));
-        Console.WriteLine("Raiz cuadrada de " + c);
-        Console.WriteLine(Math.Sqrt(c));
-        Console.WriteLine("Seno de " + c);
-        Console.WriteLine(Math.Sin(c));
-        Console.WriteLine("Coseno de " + c);
-        Console.WriteLine(Math.Cos(c));
-        Console.WriteLine("Parte entera de " + c);
-        Console.WriteLine(Math.Truncate(c));
-} while (validov2==false);
+} while (valido == false);
